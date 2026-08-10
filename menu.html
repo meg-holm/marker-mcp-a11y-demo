@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Bramblewood Coffee Co.</title>
@@ -7,74 +7,77 @@
 </head>
 <body>
 
-  <div class="navbar">
-    <img src="images/logo.png" width="40" height="40">
+  <nav class="navbar" aria-label="Main navigation">
+    <img src="images/logo.png" width="40" height="40" alt="Bramblewood Coffee Co. logo">
     <div class="nav-links">
       <div class="navlink" onclick="location.href='index.html'">Home</div>
       <div class="navlink" onclick="location.href='menu.html'">Menu</div>
       <div class="navlink" onclick="location.href='contact.html'">Contact</div>
     </div>
-  </div>
+  </nav>
 
-  <section class="page-header">
-    <h3>This week's menu</h3>
-  </section>
+  <main>
+    <section class="page-header">
+      <h1>This week's menu</h1>
+    </section>
 
-  <section class="filter-bar">
-    <input type="text" id="search" placeholder="Search menu...">
-    <select id="search">
-      <option>All</option>
-      <option>Coffee</option>
-      <option>Tea</option>
-      <option>Pastries</option>
-    </select>
-  </section>
+    <section class="filter-bar">
+      <input type="text" id="search" placeholder="Search menu...">
+      <label class="sr-only" for="menu-category">Filter by category</label>
+      <select id="menu-category">
+        <option>All</option>
+        <option>Coffee</option>
+        <option>Tea</option>
+        <option>Pastries</option>
+      </select>
+    </section>
 
-  <section class="menu-grid">
-    <div class="menu-item">
-      <img src="images/latte.jpg">
-      <h4>Bramblewood Latte</h4>
-      <p class="price">$4.50</p>
-      <div class="icon-btn" onclick="addToCart('latte')">
-        <img src="images/icon-plus.png" width="16">
+    <section class="menu-grid">
+      <div class="menu-item">
+        <img src="images/latte.jpg" alt="Bramblewood Latte">
+        <h2>Bramblewood Latte</h2>
+        <p class="price">$4.50</p>
+        <div class="icon-btn" onclick="addToCart('latte')">
+          <img src="images/icon-plus.png" width="16" alt="Add to cart">
+        </div>
       </div>
-    </div>
-    <div class="menu-item">
-      <img src="images/cold-brew.jpg">
-      <h4>Cold Brew</h4>
-      <p class="price">$4.00</p>
-      <div class="icon-btn" onclick="addToCart('coldbrew')">
-        <img src="images/icon-plus.png" width="16">
+      <div class="menu-item">
+        <img src="images/cold-brew.jpg" alt="Cold Brew coffee">
+        <h2>Cold Brew</h2>
+        <p class="price">$4.00</p>
+        <div class="icon-btn" onclick="addToCart('coldbrew')">
+          <img src="images/icon-plus.png" width="16" alt="Add to cart">
+        </div>
       </div>
-    </div>
-    <div class="menu-item">
-      <img src="images/croissant.jpg">
-      <h4>Almond Croissant</h4>
-      <p class="price">$3.75</p>
-      <div class="icon-btn" onclick="addToCart('croissant')">
-        <img src="images/icon-plus.png" width="16">
+      <div class="menu-item">
+        <img src="images/croissant.jpg" alt="Almond Croissant">
+        <h2>Almond Croissant</h2>
+        <p class="price">$3.75</p>
+        <div class="icon-btn" onclick="addToCart('croissant')">
+          <img src="images/icon-plus.png" width="16" alt="Add to cart">
+        </div>
       </div>
-    </div>
-    <div class="menu-item">
-      <img src="images/matcha.jpg">
-      <h4>Matcha Latte</h4>
-      <p class="price">$5.00</p>
-      <div class="icon-btn" onclick="addToCart('matcha')">
-        <img src="images/icon-plus.png" width="16">
+      <div class="menu-item">
+        <img src="images/matcha.jpg" alt="Matcha Latte">
+        <h2>Matcha Latte</h2>
+        <p class="price">$5.00</p>
+        <div class="icon-btn" onclick="addToCart('matcha')">
+          <img src="images/icon-plus.png" width="16" alt="Add to cart">
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <table class="hours-table">
-    <tr>
-      <td>Mon - Fri</td>
-      <td>7am - 6pm</td>
-    </tr>
-    <tr>
-      <td>Sat - Sun</td>
-      <td>8am - 4pm</td>
-    </tr>
-  </table>
+    <table class="hours-table">
+      <tr>
+        <td>Mon - Fri</td>
+        <td>7am - 6pm</td>
+      </tr>
+      <tr>
+        <td>Sat - Sun</td>
+        <td>8am - 4pm</td>
+      </tr>
+    </table>
+  </main>
 
   <footer>
     <p>&copy; 2026 Bramblewood Coffee Co.</p>
