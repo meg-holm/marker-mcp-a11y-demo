@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Bramblewood Coffee Co.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="navbar">
+    <img src="images/logo.png" width="40" height="40">
+    <div class="nav-links">
+      <div class="navlink" onclick="location.href='index.html'">Home</div>
+      <div class="navlink" onclick="location.href='menu.html'">Menu</div>
+      <div class="navlink" onclick="location.href='contact.html'">Contact</div>
+    </div>
+  </div>
+
+  <section class="page-header">
+    <h3>Get in touch</h3>
+    <p class="muted-text">Questions, catering requests, or just want to say hi?</p>
+  </section>
+
+  <form class="contact-form" onsubmit="return handleSubmit()">
+    <input type="text" placeholder="Your name">
+    <input type="text" placeholder="Email address">
+    <input type="text" placeholder="Phone (optional)">
+    <textarea placeholder="Your message"></textarea>
+
+    <div class="checkbox-row">
+      <div class="fake-checkbox" onclick="toggleCheck(this)"></div>
+      <span>Sign me up for the newsletter</span>
+    </div>
+
+    <div class="btn submit-btn" onclick="handleSubmit()">Send message</div>
+  </form>
+
+  <section class="map-section">
+    <h4>Find us</h4>
+    <img src="images/map.jpg" class="map-image">
+    <p>123 Bramblewood Ave, Portland, OR</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Bramblewood Coffee Co.</p>
+  </footer>
+
+  <script>
+    function toggleCheck(el) {
+      el.classList.toggle('checked');
+    }
+    function handleSubmit() {
+      alert('Thanks! We will get back to you soon.');
+      return false;
+    }
+  </script>
+
+</body>
+</html>
