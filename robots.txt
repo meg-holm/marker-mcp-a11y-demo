@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://meg-holm.github.io/marker-mcp-a11y-demo/sitemap.xml
