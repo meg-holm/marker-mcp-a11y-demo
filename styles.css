@@ -55,7 +55,7 @@ body {
 }
 
 .muted-text {
-  color: #666666;
+  color: #b7b7b7;
   font-size: 14px;
   margin-bottom: 12px;
 }
@@ -94,7 +94,7 @@ body {
 .btn {
   display: inline-block;
   background: #6f4e37;
-  color: #fdfdfd;
+  color: #a4907c;
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
@@ -103,7 +103,7 @@ body {
 footer {
   text-align: center;
   padding: 24px;
-  color: #666666;
+  color: #999;
   font-size: 13px;
 }
 
@@ -153,7 +153,7 @@ footer {
 }
 
 .price {
-  color: #666666;
+  color: #aaa;
   font-size: 13px;
 }
 
@@ -175,7 +175,7 @@ footer {
 
 .hours-table td {
   padding: 8px 20px;
-  color: #666666;
+  color: #888;
 }
 
 .contact-form {
